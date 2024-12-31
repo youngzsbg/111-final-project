@@ -1,0 +1,128 @@
+/* Dracula Color Palette */
+:root {
+    --dracula-bg: #282a36;
+    --dracula-current-line: #44475a;
+    --dracula-selection: #44475a;
+    --dracula-comment: #6272a4;
+    --dracula-cyan: #8be9fd;
+    --dracula-green: #50fa7b;
+    --dracula-orange: #ffb86c;
+    --dracula-pink: #ff79c6;
+    --dracula-purple: #bd93f9;
+    --dracula-red: #ff5555;
+    --dracula-yellow: #f1fa8c;
+}
+
+/* General Body Styling */
+body {
+    background-color: var(--dracula-bg);
+    color: #f8f8f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dracula-current-line);
+    border-bottom: 1px solid #44475a;
+}
+
+.navbar .navbar-brand {
+    color: var(--dracula-pink) !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #f8f8f2 !important;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--dracula-cyan) !important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--dracula-pink) !important;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: var(--dracula-purple);
+    border-color: var(--dracula-purple);
+}
+
+.btn-primary:hover {
+    background-color: var(--dracula-pink);
+    border-color: var(--dracula-pink);
+}
+
+.btn-secondary {
+    background-color: var(--dracula-orange);
+    border-color: var(--dracula-orange);
+}
+
+.btn-secondary:hover {
+    background-color: var(--dracula-yellow);
+    border-color: var(--dracula-yellow);
+}
+
+/* Card Styling */
+.card {
+    background-color: var(--dracula-current-line);
+    color: #f8f8f2;
+}
+
+.card-header {
+    background-color: var(--dracula-purple);
+    color: #f8f8f2;
+}
+
+.card-footer {
+    background-color: var(--dracula-purple);
+    color: #f8f8f2;
+}
+
+/* Links */
+a {
+    color: var(--dracula-cyan);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dracula-pink);
+}
+
+/* Tables */
+.table {
+    background-color: var(--dracula-bg);
+    color: #f8f8f2;
+}
+
+.table thead {
+    background-color: var(--dracula-current-line);
+}
+
+.table thead th {
+    color: var(--dracula-yellow);
+}
+
+.table tbody tr:hover {
+    background-color: var(--dracula-selection);
+}
+
+/* Form Inputs */
+input, select, textarea {
+    background-color: var(--dracula-bg);
+    color: #f8f8f2;
+    border: 1px solid var(--dracula-purple);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--dracula-cyan);
+    box-shadow: 0 0 0 0.25rem rgba(139, 233, 253, 0.25);
+}
+
+form > p > input,
+form > p > textarea {
+    font-size: 20;
+    border-radius: 8px;
+    width: 100%;
+}
+
